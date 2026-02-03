@@ -15,6 +15,10 @@ Retrieval-augmented generation (RAG) systems are increasingly deployed to enhanc
 ```
 Confundo-main/
 ├── README.md                                      # Project documentation
+├── Examples/                                      # Prompt optimization (conjunction selection + GRPO training)
+│   ├── factual_correctness_manipulation.json      # Examples of factual correctness manipulation attack
+│   ├── opinion_manipulation.json                  # Examples of opinion manipulation attack
+│   ├── hallucination_amplification.json           # Examples of hallucination amplification attack
 ├── train_factual_correctness_manipulation.py      # RL fine-tuning for factual correctness manipulation
 ├── train_opinion_minipulation.py                  # RL fine-tuning for opinion minipulation
 ├── train_hallucination_amplification.py           # RL fine-tuning for hallucination amplification
