@@ -9,7 +9,7 @@
 ```
 Confundo-main/
 ├── README.md                                      # Project documentation
-├── Examples/                                      # Prompt optimization (conjunction selection + GRPO training)
+├── Examples/                                      # Examples
 │   ├── factual_correctness_manipulation.json      # Examples of factual correctness manipulation attack
 │   ├── opinion_manipulation.json                  # Examples of opinion manipulation attack
 │   ├── hallucination_amplification.json           # Examples of hallucination amplification attack
