@@ -31,8 +31,17 @@ pip install -r requirements.txt
 ```
 
 ### 2. GRPO Training
+
 ```bash
 python train_factual_correctness_manipulation.py
+```
+
+```bash
+python train_opinion_minipulation.py
+```
+
+```bash
+python train_hallucination_amplification.py
 ```
 
 ### 3. Evaluate attacks
