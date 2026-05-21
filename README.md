@@ -54,7 +54,7 @@ You can instantly access and download our open-sourced, fine-tuned poison genera
 
 ### 🔄 Framework Transferability
 
-Evaluate how effectively Confundo's generated poison transfers across popular, unknown production-level RAG orchestration frameworks:
+Evaluate the effectiveness of Confundo across popular, unknown RAG pipelines:
 
 - **LlamaIndex Pipeline Evaluation:**
   ```
@@ -91,33 +91,33 @@ Assess how well the adversarial content bypasses automated document preprocessin
 
 #### B. LLM-Based Intent Detection
 
-Evaluate survival rates when advanced LLM judges act as context monitors to detect adversarial content injection:
+Evaluate survival rates when commercial LLM judges act as intent monitors to detect adversarial content injection::
 ```
 python ./defenses/intent.py
 ```
 
-#### C. Semantic Paraphrasing Defenses
+#### C. Paraphrasing
 
-Measure the robustness of the attack when queries or retrieved contexts undergo rewriting across three distinct operational levels:
+Measure the robustness when queries or retrieved documents undergo rewriting across three levels:
 
-- **Level I — Paraphrase Question:** Rewrites user queries to break exact-match triggers.
+- **Level I — Paraphrase Question:** Rewrite user queries.
   ```
   python ./defenses/paraphase/paraphase-1.py
   ```
 
-- **Level II — Paraphrase Retrieved Entry:** Rewrites the retrieved text fragments to break localized adversarial structures.
+- **Level II — Paraphrase Retrieved Entry:** Rewrite retrieved documents.
   ```
   python ./defenses/paraphase/paraphase-2.py
   ```
 
-- **Level III — Paraphrase Both Question and Entry:** Full-spectrum rewriting defense.
+- **Level III — Paraphrase Both Question and Entry:** Rewrite both queries and retrieved documents.
   ```
   python ./defenses/paraphase/paraphase-3.py
   ```
 
-#### D. Neural Reranking
+#### D. Reranking
 
-Analyze performance degradation when a neural rerank model alters the position and priority of the poisoned entries within the prompt context:
+Analyze performance degradation when a rerank model alters the position and priority of the poison entries:
 ```
 python ./defenses/rerank.py
 ```
@@ -126,7 +126,7 @@ python ./defenses/rerank.py
 
 ### 1. Data Preparation
 
-To optimize the generator, you must first prepare target answers and semantic variants. You can generate these customized assets using our notebook or bootstrap directly from our pre-packaged examples:
+To fine-tune the generator, you must first prepare target answers and semantic variants. You can generate these customized assets using our notebook or bootstrap directly from our pre-packaged examples:
 
 - **Target Answer Generation:** Generate incorrect target responses using the interactive tool `./tools/gen.ipynb`, or leverage our ready-made setup at:
 
@@ -138,10 +138,19 @@ To optimize the generator, you must first prepare target answers and semantic va
 
 ### 2. Fine-Tuning Execution
 
-Launch the reinforcement learning alignment loop to fine-tune the LLM poison generator:
-```
-python ./rl_train.py
-```
+Launch the reinforcement learning alignment loop to fine-tune the poison generator:
+
+- Perplexity Filtering:
+  ```
+  python ./defenses/filter/filtering_perplexity.py
+  ```
+
+- Duplicate-Text Filtering:
+  ```
+  python ./defenses/filter/filtering_duplicate.py
+  ```
+
+- Keyword Density Filtering: ```python ./defenses/filter/filtering_keyword.py```
 
 > 💡 **Note on Computation Time:** A full training sequence typically requires **10+ hours** depending on your hardware specifications. For a rapid preview, we provide a **simplified training pipeline** script at `[TODO]`. Alternatively, you can bypass the training phase entirely by downloading our pre-trained, fully-optimized checkpoints directly from HuggingFace at `[TODO]`.
 
