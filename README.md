@@ -35,6 +35,37 @@ Confundo provides a unified framework capable of supporting multiple adversarial
 - **Hallucination Induction**: Intentionally triggers ungrounded hallucinations within the target LLM's responses.
 - **Opinion Manipulation**: Systematically skews the generation towards biased perspectives or target viewpoints.
 
+
+
+这里是针对该部分修改后的内容，已经为你更新了对应文件的路径与快速部署、样例展示的描述，你可以直接复制替换原有的那块区域：
+
+```markdown
+* **Factual Correctness Manipulation Attack**: Forces the RAG system to generate completely incorrect or misleading factual assertions. Explore our interactive deployment and attack demonstrations at:
+    ```bash
+    ./factual_correctness_manipulation.ipynb
+    
+
+```
+
+* **Hallucination Induction**: Intentionally triggers ungrounded hallucinations within the target LLM's responses. Explore our interactive deployment and attack demonstrations at:
+```bash
+./hallucination_induction.ipynb
+
+
+```
+
+
+
+```
+* **Opinion Manipulation**: Systematically skews the generation towards biased perspectives or target viewpoints. Explore our interactive deployment and attack demonstrations at:
+    ```bash
+    ./opinion_manipulation.ipynb
+    ```
+
+```
+
+
+
 ## 📊 Cross-Pipeline Transferability & Robustness Analysis
 
 ### 🔄 Framework Transferability
