@@ -31,10 +31,15 @@ pip install -r [TODO]
 Confundo provides a unified framework capable of supporting multiple adversarial objectives. We provide interactive notebooks for rapid deployment, along with pre-configured attack demonstrations across three core axes:
 
 * **Factual Correctness Manipulation Attack**: Deceive the RAG to provide incorrect answers.
+
   👉 Run the interactive demo: [`./factual_correctness_manipulation.ipynb`](./factual_correctness_manipulation.ipynb)
+
 * **Hallucination Induction**: Inducing RAG to produce hallucinations.
+
   👉 Run the interactive demo: [`./hallucination_induction.ipynb`](./hallucination_induction.ipynb)
+
 * **Opinion Manipulation**: Manipulate RAGs to arrive at answers with subjective opinions.
+  
   👉 Run the interactive demo: [`./opinion_manipulation.ipynb`](./opinion_manipulation.ipynb)
 
 #### 🤗 Pre-trained Models
