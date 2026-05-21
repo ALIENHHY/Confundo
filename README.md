@@ -143,9 +143,7 @@ Launch the reinforcement learning alignment loop to fine-tune the poison generat
 - Duplicate-Text Filtering: ```python ./defenses/filter/filtering_keyword.py```
 - Keyword Density Filtering: ```python ./defenses/filter/filtering_keyword.py```
 
-> 💡 **Note on Computation Time & Hardware:** A full training sequence typically requires a GPU with at least 48GB VRAM and takes 10+ hours, depending on your specific hardware configurations. Please note that training parameters or configurations may need adjustment based on your experimental environment (e.g., hardware or package versions). 
-> 
-> For a rapid preview, we provide a simplified training pipeline script at `[TODO]`. Alternatively, you can bypass the training phase entirely by downloading our fine-tuned models directly from HuggingFace:
+> 💡 **Note on Computation Time & Hardware:** A full training sequence typically requires a GPU with at least 48GB VRAM and takes 10+ hours, depending on your specific hardware configurations. Please note that training parameters or configurations may need adjustment based on your experimental environment (e.g., hardware or package versions). For a rapid preview, we provide a simplified training pipeline script at `[TODO]`. Alternatively, you can bypass the training phase entirely by downloading our fine-tuned models directly from HuggingFace:
 * Factual Correctness: [confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
 * Opinion Manipulation: [confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
 * Hallucination Induction: [confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
