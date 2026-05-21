@@ -28,21 +28,20 @@ pip install -r [TODO]
 ```
 
 ### 2. Running Core Attacks
+Confundo provides a unified framework capable of supporting multiple adversarial objectives. We provide interactive notebooks for rapid deployment, along with pre-configured attack demonstrations across three core axes:
 
-Confundo provides a unified framework capable of supporting multiple adversarial objectives. You can initiate specific poisoning implementations across three core axes:
+* **Factual Correctness Manipulation Attack**: Deceive the RAG to provide incorrect answers.
+  👉 Run the interactive demo: [`./factual_correctness_manipulation.ipynb`](./factual_correctness_manipulation.ipynb)
+* **Hallucination Induction**: Inducing RAG to produce hallucinations.
+  👉 Run the interactive demo: [`./hallucination_induction.ipynb`](./hallucination_induction.ipynb)
+* **Opinion Manipulation**: Manipulate RAGs to arrive at answers with subjective opinions.
+  👉 Run the interactive demo: [`./opinion_manipulation.ipynb`](./opinion_manipulation.ipynb)
 
-* **Factual Correctness Manipulation Attack**: Forces the RAG system to generate completely incorrect or misleading factual assertions. Explore our interactive deployment and attack demonstrations at:
-  ```bash
-  ./factual_correctness_manipulation.ipynb
-  ```
-* **Hallucination Induction**: Intentionally triggers ungrounded hallucinations within the target LLM's responses. Explore our interactive deployment and attack demonstrations at:
-  ```bash
-  ./hallucination_induction.ipynb
-  ```
-* **Opinion Manipulation**: Systematically skews the generation towards biased perspectives or target viewpoints. Explore our interactive deployment and attack demonstrations at:
-  ```bash
-  ./opinion_manipulation.ipynb
-  ```
+#### 🤗 Pre-trained Models
+You can instantly access and download our open-sourced, fine-tuned poison generators directly from HuggingFace:
+* **Factual Correctness:** [AlienHu/confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
+* **Opinion Manipulation:** [AlienHu/confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
+* **Hallucination Induction:** [AlienHu/confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
 
 ---
 
