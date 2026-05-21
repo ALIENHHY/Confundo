@@ -44,9 +44,9 @@ Confundo provides a unified framework capable of supporting multiple adversarial
 
 #### 🤗 Pre-trained Models
 You can instantly access and download our open-sourced, fine-tuned poison generators directly from HuggingFace:
-* **Factual Correctness:** [AlienHu/confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
-* **Opinion Manipulation:** [AlienHu/confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
-* **Hallucination Induction:** [AlienHu/confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
+* **Factual Correctness:** [confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
+* **Opinion Manipulation:** [confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
+* **Hallucination Induction:** [confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
 
 ---
 
@@ -139,23 +139,17 @@ To fine-tune the generator, you must first prepare target answers and semantic v
 ### 2. Fine-Tuning Execution
 
 Launch the reinforcement learning alignment loop to fine-tune the poison generator:
-
-- Perplexity Filtering:
-  ```
-  python ./defenses/filter/filtering_perplexity.py
-  ```
-
-- Duplicate-Text Filtering:
-  ```
-  python ./defenses/filter/filtering_duplicate.py
-  ```
-
+- Perplexity Filtering: ```python ./defenses/filter/filtering_keyword.py```
+- Duplicate-Text Filtering: ```python ./defenses/filter/filtering_keyword.py```
 - Keyword Density Filtering: ```python ./defenses/filter/filtering_keyword.py```
 
-> 💡 **Note on Computation Time:** A full training sequence typically requires **10+ hours** depending on your hardware specifications. For a rapid preview, we provide a **simplified training pipeline** script at `[TODO]`. Alternatively, you can bypass the training phase entirely by downloading our pre-trained, fully-optimized checkpoints directly from HuggingFace at `[TODO]`.
+> 💡 **Note on Computation Time & Hardware:** A full training sequence typically requires a GPU with at least 48GB VRAM and takes 10+ hours, depending on your specific hardware configurations. Please note that training parameters or configurations may need adjustment based on your experimental environment (e.g., hardware or package versions). 
+> 
+> For a rapid preview, we provide a simplified training pipeline script at `[TODO]`. Alternatively, you can bypass the training phase entirely by downloading our fine-tuned models directly from HuggingFace:
+* Factual Correctness: [confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
+* Opinion Manipulation: [confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
+* Hallucination Induction: [confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
 
-## 📬 Contact & Support
+---
 
-If you encounter any issues, bugs, or have inquiries regarding the methodology and code, feel free to open an issue or contact:
-
-- **Email:** haoyanghu@connect.hku.hk
+📬 If you encounter any issues, feel free to contact: haoyanghu@connect.hku.hk
