@@ -96,7 +96,14 @@ Evaluate survival rates when commercial LLM judges act as intent monitors to det
 python ./defenses/intent.py
 ```
 
-#### C. Paraphrasing
+#### C. Reranking
+
+Analyze performance degradation when a rerank model alters the position and priority of the poison entries:
+```
+python ./defenses/rerank.py
+```
+
+#### D. Paraphrasing
 
 Measure the robustness when queries or retrieved documents undergo rewriting across three levels:
 
@@ -114,13 +121,6 @@ Measure the robustness when queries or retrieved documents undergo rewriting acr
   ```
   python ./defenses/paraphase/paraphase-3.py
   ```
-
-#### D. Reranking
-
-Analyze performance degradation when a rerank model alters the position and priority of the poison entries:
-```
-python ./defenses/rerank.py
-```
 
 ## 🏋️ Training the Poison Generator
 
