@@ -18,7 +18,7 @@ For more technical details and experimental results, we invite you to check out 
 ---
 ## 🚀 Quick Start
 
-### 1. Installation & Environment Setup
+### 🛠️ Installation & Environment Setup
 
 Clone this repository and install the required dependencies:
 ```
@@ -27,7 +27,7 @@ cd [TODO]
 pip install -r [TODO]
 ```
 
-### 2. Running Core Attacks
+### ⚔️ Running Core Attacks
 Confundo provides a unified framework capable of supporting multiple adversarial objectives. We provide interactive notebooks for rapid deployment, along with pre-configured attack demonstrations across three core axes:
 
 * **Factual Correctness Manipulation Attack**: Deceive the RAG to provide incorrect answers.
@@ -42,7 +42,7 @@ Confundo provides a unified framework capable of supporting multiple adversarial
   
   👉 Run the interactive demo: [`./opinion_manipulation.ipynb`](./opinion_manipulation.ipynb)
 
-#### 🤗 Pre-trained Models
+### 🤗 Pre-trained Models
 You can instantly access and download our open-sourced, fine-tuned poison generators directly from HuggingFace:
 * **Factual Correctness:** [confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
 * **Opinion Manipulation:** [confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
