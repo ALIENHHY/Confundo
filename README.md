@@ -43,7 +43,7 @@ Confundo provides a unified framework capable of supporting multiple adversarial
   👉 Run the interactive demo: [`./opinion_manipulation.ipynb`](./opinion_manipulation.ipynb)
 
 ### 🤗 Pre-trained Models
-You can instantly access and download our open-sourced, fine-tuned poison generators directly from HuggingFace:
+We open-sourced our fine-tuned poison generators on HuggingFace:
 * **Factual Correctness:** [confundo-correctness](https://huggingface.co/AlienHu/confundo-correctness)
 * **Opinion Manipulation:** [confundo-opinion](https://huggingface.co/AlienHu/confundo-opinion)
 * **Hallucination Induction:** [confundo-hallucination](https://huggingface.co/AlienHu/confundo-hallucination)
