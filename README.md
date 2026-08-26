@@ -153,4 +153,4 @@ Launch the reinforcement learning alignment loop to fine-tune the poison generat
 
 ---
 
-📬 If you encounter any issues, feel free to contact: haoyanghu@connect.hku.hk
+📬 If you encounter any issues, feel free to contact: haoyanghu@connect.hku.hk！
