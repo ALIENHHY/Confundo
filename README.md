@@ -1,6 +1,5 @@
 # **[USENIX Security 2026] Confundo: Learning to Generate Robust Poison for Practical RAG Systems**
 
----
 Please see the official repo at: https://github.com/HKU-TASR/Confundo.
 
 ---
